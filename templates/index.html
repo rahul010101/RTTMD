@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Packet Capture</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script>
+        
+    </script>
+</head>
+<body>
+    <h1>Live Network Packet Capture</h1>
+    <button onclick="startCapture()">Start Capture</button>
+    <button onclick="stopCapture()">Stop Capture</button>
+    <button onclick="clearCapture()">Clear Logs</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Packet Summary with Timestamp</th>
+                <th>Threat Level</th>
+                <th>Source IP</th>
+                <th>Destination IP</th>
+                <th>Source Port</th>
+                <th>Destination Port</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="packet-table-body">
+            <!-- Packets will be dynamically inserted here -->
+        </tbody>
+    </table>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

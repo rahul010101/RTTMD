@@ -1,0 +1,94 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background for better contrast */
+    color: #333; /* Dark text for readability */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #4a4a4a; /* Darker shade for the heading */
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007bff; /* Bootstrap Primary Color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Light gray border for table rows */
+}
+
+th {
+    background-color: #007bff; /* Table header background */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray background for even rows */
+}
+
+tr:hover {
+    background-color: #e6f7ff; /* Light blue highlight on row hover */
+}
+
+/* Styles for the Threat Level column */
+td.threat-level {
+    font-weight: bold; /* Make the text bold for emphasis */
+    border-radius: 5px; /* Rounded corners for cells */
+}
+
+/* Background colors for specific threat levels */
+.threat-level-high {
+    background-color: #ffcccc; /* Light red for high threat */
+    color: #d9534f; /* Darker red text */
+}
+
+.threat-level-medium {
+    background-color: #ffe5b4; /* Light orange for medium threat */
+    color: #f0ad4e; /* Darker orange text */
+}
+
+.threat-level-low {
+    background-color: #ffffb4; /* Light yellow for low threat */
+    color: #f0ad4e; /* Darker yellow text */
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Less padding on smaller screens */
+    }
+
+    button {
+        width: 100%; /* Buttons stack vertically on small screens */
+        margin-bottom: 10px;
+    }
+}
